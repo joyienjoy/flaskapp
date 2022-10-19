@@ -31,8 +31,6 @@ LOCALHOST : Use Curl to see it: curl http://10.1.0.4:5000/
 
 OUTSIDE THE VM: ON WEB BROWSER: VM-IP:5000    (OPEN 5000 PORT FOR THE VM)
 
-![image](https://user-images.githubusercontent.com/92083624/196701324-80a92be5-9313-4ede-a5ab-bec264fd0fde.png)
-
 
 STEP 2 - CREATING DOCKER IMAGE OF APPLICATION AND RUNIING IT
 
@@ -55,3 +53,7 @@ To see container: docker ps
 OUTPUT CAN BE SEEN AT: VM-IP:80 on Web browser
 
 5. docker logs container-id                 # To see actions inside container when you try to access the output on web browser
+
+Output from Continer at IP:80
+
+![image](https://user-images.githubusercontent.com/92083624/196701324-80a92be5-9313-4ede-a5ab-bec264fd0fde.png)
