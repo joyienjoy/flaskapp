@@ -31,6 +31,7 @@ LOCALHOST : Use Curl to see it: curl http://10.1.0.4:5000/
 
 OUTSIDE THE VM: ON WEB BROWSER: VM-IP:5000    (OPEN 5000 PORT FOR THE VM)
 
+![image](https://user-images.githubusercontent.com/92083624/196701324-80a92be5-9313-4ede-a5ab-bec264fd0fde.png)
 
 
 STEP 2 - CREATING DOCKER IMAGE OF APPLICATION AND RUNIING IT
@@ -48,6 +49,7 @@ To see image: docker images
 4. docker run -d -p 80:5000 myapplication      # Run a container with this image. The application's output at port 5000 is mapped with 80 of VM
 
 To see container: docker ps
+
 ![image](https://user-images.githubusercontent.com/92083624/196700755-34818dc7-567a-49c1-8d0c-ffdccc8e1ad0.png)
 
 OUTPUT CAN BE SEEN AT: VM-IP:80 on Web browser
