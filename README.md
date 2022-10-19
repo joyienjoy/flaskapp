@@ -2,14 +2,21 @@
 Docker image building of a simple Flask App
 
 STEP 1 - TESTING APP ON MACHINE USING VIRTUAL ENVIRONMENT
+
 sudo yum install python-virtualenv
+
 mkdir project   #Create a folder for project
+
 cd project      #Go inside the directory
+
 python3 -m venv myenvironment   #Start a virtual environment
-. myenvironment/bin/activate   # Now you will work inside the environment
+
+source myenvironment/bin/activate   # Now you will work inside the environment
 
 pip install Flask     #Install Flask inside env
+
 vi app.py             #Project code
+
 export FLASK_APP=app.py    #Define a env variable
 
 python3 app.py       # Run the application
