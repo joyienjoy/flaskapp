@@ -7,6 +7,10 @@ pipeline {
     stage('Git') {
       steps {
         git branch: 'main', changelog: false, poll: false, url: 'https://github.com/joyienjoy/flaskapp.git'
+        sh """ 
+        echo "DEV Code from Develop Branch"
+        ls -l
+        """
       }
     }
     stage('Build') {
