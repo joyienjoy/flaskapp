@@ -7,6 +7,9 @@ pipeline {
     stage('Git') {
       steps {
         git branch: 'main', changelog: false, poll: false, url: 'https://github.com/joyienjoy/flaskapp.git'
+        sh """
+        echo "TEST Code from Develop Branch"
+        """
       }
     }
     stage('Build') {
